@@ -30,5 +30,4 @@ public class UserControl {
     public User addUser(@RequestBody User user){
         return userService.addUser(user);
     }
-
 }

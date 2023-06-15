@@ -20,12 +20,10 @@ public class UserControl {
     public List<User> getAllUsers(){
         return userService.getAllUsers();
     }
-
     @GetMapping("/{username}")
     public User getUser(@PathVariable("username") String username){
         return userService.getUser(username);
     }
-
     @PostMapping("/addUser")
     public User addUser(@RequestBody User user){
         return userService.addUser(user);

@@ -1,4 +1,4 @@
 package com.spring.security.repository;
 
-public interface UserRepository {
+public interface UserRepository{
 }

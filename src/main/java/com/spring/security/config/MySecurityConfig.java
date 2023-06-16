@@ -19,7 +19,6 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {
                 .authenticated()
                 .and()
                 .httpBasic();
-
     }
 
 

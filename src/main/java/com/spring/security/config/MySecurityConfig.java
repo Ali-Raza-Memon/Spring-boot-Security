@@ -14,15 +14,15 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(prePostEnabled = true)
+
 public class MySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-//                .antMatchers("/public/**").hasRole("NORMAL")
-//                .antMatchers("/users/**").hasRole("ADMIN")
+                .antMatchers("/public/**").hasRole("NORMAL")
+                .antMatchers("/users/**").hasRole("ADMIN")
                 .anyRequest()
                 .authenticated()
                 .and()

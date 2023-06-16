@@ -21,7 +21,7 @@ public class UserControl {
     public List<User> getAllUsers(){
         return userService.getAllUsers();
     }
-    @PreAuthorize("hasRole('ADMIN')")
+
     @GetMapping("/{username}")
     public User getUser(@PathVariable("username") String username){
         return userService.getUser(username);
